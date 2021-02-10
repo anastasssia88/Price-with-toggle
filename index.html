@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Price with toggle</title>
+
+  
+</head>
+<body>
+
+
+  
+  <section>
+
+    <div class="toggle">
+      <h3 class="toggle__heading">Our Pricing</h3>
+      <div class="toggle__flex">
+        <span class="toggle__flex__period">Annually</span>
+        <div class="toggle__flex__checkbox">
+          <input type="checkbox" name="checkbox">
+        </div>
+        <span class="toggle__flex__period">Monthly</span>
+      </div>
+    </div>
+
+    <!-- Price flex container -->
+    <div class="prices">
+      <!-- Basic price -->
+        <div class="prices__basic">
+            <p class="prices__tariff">Basic</p>
+            <div class="prices__cost">
+              <span class="prices__currency">&dollar;</span>
+              <h2 class="prices__number" id="basic__price">19.99</h2>
+            </div>
+            <ul class="prices__perks">
+              <li>500GB Storage</li>
+              <li>2 Users Allowed</li>
+              <li>Send up to 3 GB</li>
+            </ul>
+            <button class="btn btn--primary">Learn more</button>
+        </div>
+
+        <!-- Professional price -->
+        <div class="prices__professional">
+            <p class="prices__tariff prices__tariff--focus">Professional</p>
+            <div class="prices__cost">
+              <span class="prices__currency prices__currency--focus">&dollar;</span>
+              <h2 class="prices__number prices__number--focus" id="professional__price">24.99</h2>
+            </div>
+            <ul class="prices__perks prices__perks--focus">
+              <li>1 TB Storage</li>
+              <li>5 Users Allowed</li>
+              <li>Send up to 10 GB</li>
+            </ul>
+            <button class="btn btn--outline">Learn More</button>
+        </div>
+
+        <!-- Master price -->
+        <div class="prices__master">
+          <p class="prices__tariff">Master</p>
+          <div class="prices__cost">
+            <span class="prices__currency">&dollar;</span>
+            <h2 class="prices__number" id="master__price">39.99</h2>
+          </div>
+          <ul class="prices__perks">
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <button class="btn btn--primary">Learn More</button>
+        </div>
+    </div>
+  </section>
+
+
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+    -->
+    <script src="./main.js"></script>
+</body>
+</html>
